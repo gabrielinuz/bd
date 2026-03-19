@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- CONFIGURACIÓN GLOBAL ---
     // Límite estricto de diapositivas según el temario
-    const totalSlides = 21; 
+    const totalSlides = 23; 
 
     // --- CONSTRUCCIÓN DE NAVEGACIÓN ---
     const navContainer = document.createElement('nav');
