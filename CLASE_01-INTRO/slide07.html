@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../index.style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Base de Datos</title>
+</head>
+<body>
+    <section class="slide">
+        <h1>07. La Importancia del Contexto</h1>
+        <h2>Ejemplificación del Significado Implícito.</h2>
+        
+        <div class="content-grid">
+            <article>
+                <p>El mismo tipo de dato (ej. <code>DATE</code>) altera su naturaleza ontológica dependiendo de la base de datos que lo encapsula:</p>
+            </article>
+            <aside>
+                <table style="width: 100%; border-collapse: collapse; margin-top: 20px; color: var(--text);">
+                    <thead>
+                        <tr style="border-bottom: 2px solid var(--accent);">
+                            <th style="padding: 10px; text-align: left;">Dominio (BD)</th>
+                            <th style="padding: 10px; text-align: left;">Interpretación del Dato</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #333;">
+                            <td style="padding: 10px;">Ventas</td>
+                            <td style="padding: 10px;">Fecha de emisión de factura / transacción.</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Música</td>
+                            <td style="padding: 10px;">Fecha de registro fonográfico / masterización.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </aside>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="../transitions.js"></script>
+</body>
+</html>

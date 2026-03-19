@@ -1,0 +1,18 @@
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Empuja la referencia académica al fondo */
+}
+
+.academic-ref {
+    font-size: 0.8rem;
+    padding: 12px;
+    background: rgba(243, 156, 18, 0.05); /* Un tinte muy leve del ámbar */
+    border-left: 3px solid var(--accent);
+    margin-top: 20px;
+    color: #bbb;
+}
+
+.academic-ref em {
+    color: var(--accent);
+}
