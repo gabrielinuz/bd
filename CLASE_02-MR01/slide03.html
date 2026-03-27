@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../index.style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Base de Datos</title>
+</head>
+<body>
+    <section class="slide">
+        <h1>03. Índices en Bases de Datos</h1>
+        <h2>Estructuras para la aceleración de consultas.</h2>
+        <div class="content-grid">
+            <article>
+                <p>Un índice es una estructura de datos (generalmente un <strong>B-Tree</strong>) que permite encontrar registros sin recorrer toda la tabla.</p>
+                <ul>
+                    <li><strong>Pros:</strong> Búsquedas <code>SELECT</code> mucho más rápidas.</li>
+                    <li><strong>Contras:</strong> Penaliza el rendimiento de <code>INSERT</code> y <code>UPDATE</code> (el índice debe actualizarse).</li>
+                </ul>
+            </article>
+            <article style="background: #141715; padding: 15px; border-left: 3px solid var(--accent);">
+                <p><strong>Tipos comunes:</strong></p>
+                <ul>
+                    <li>Clustered (Organiza la tabla físicamente)</li>
+                    <li>Non-Clustered (Estructura separada)</li>
+                    <li>Unique (Evita duplicados)</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="../transitions.js"></script>
+</body>
+</html>

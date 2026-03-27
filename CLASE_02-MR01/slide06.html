@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../index.style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Base de Datos</title>
+</head>
+<body>
+    <section class="slide">
+        <h1>06. Acciones Referenciales</h1>
+        <h2>¿Qué pasa cuando borramos un dato relacionado?</h2>
+        <div class="content-grid">
+            <article>
+                <p>Define el comportamiento de las FK ante cambios en la PK:</p>
+                <ul>
+                    <li><strong>CASCADE:</strong> Si borras al usuario, se borran sus pedidos.</li>
+                    <li><strong>SET NULL:</strong> Si borras al usuario, sus pedidos quedan sin dueño.</li>
+                    <li><strong>RESTRICT / NO ACTION:</strong> Impide borrar al usuario si tiene pedidos asociados.</li>
+                </ul>
+            </article>
+            <pre style="font-size: 0.8rem; background: #000; padding: 10px;">
+    FOREIGN KEY (user_id) 
+    REFERENCES Users(id)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE;</pre>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="../transitions.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="../index.style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Base de Datos</title>
+</head>
+<body>
+    <section class="slide">
+        <h1>14. Agrupamiento Lógico</h1>
+        <h2>GROUP BY y el filtro post-agregación HAVING.</h2>
+        <div class="content-grid">
+            <article>
+                <p><strong>GROUP BY:</strong> Colapsa filas con valores idénticos en grupos para aplicar funciones de agregado.</p>
+                <p><strong>HAVING:</strong> Es el <code>WHERE</code> de los grupos. Se usa cuando el filtro depende de una función de agregado.</p>
+            </article>
+            <pre style="font-size: 0.75rem; color: var(--accent);">
+    SELECT pais, COUNT(*) 
+    FROM Usuarios 
+    GROUP BY pais 
+    HAVING COUNT(*) > 100;</pre>
+        </div>
+        <aside class="academic-ref">
+            <p><strong>Rigor Técnico:</strong> El orden de ejecución es: <code>FROM</code> -> <code>WHERE</code> -> <code>GROUP BY</code> -> <code>HAVING</code> -> <code>SELECT</code>.</p>
+        </aside>
+    </section>
+    <script src="script.js"></script>
+    <script src="../transitions.js"></script>
+</body>
+</html>

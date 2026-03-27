@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="../index.style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Base de Datos</title>
+</head>
+<body>
+    <section class="slide">
+        <h1>15. Cláusula JOIN</h1>
+        <h2>Cruzando información entre entidades.</h2>
+        <div class="content-grid">
+            <article>
+                <p>Permite combinar filas de dos o más tablas basándose en una columna relacionada (FK = PK).</p>
+                <pre style="font-size: 0.75rem; background: #000; padding: 10px;">
+    SELECT U.nombre, P.producto
+    FROM Users U
+    INNER JOIN Pedidos P ON U.id = P.user_id;</pre>
+            </article>
+            <pre style="font-family: monospace; font-size: 0.7rem; color: var(--accent);">
+    [ TABLA A ]   JOIN   [ TABLA B ]
+        (PK)     <---->      (FK)
+            Intersección lógica
+            </pre>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="../transitions.js"></script>
+</body>
+</html>

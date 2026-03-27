@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="../index.style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Base de Datos</title>
+</head>
+<body>
+    <section class="slide">
+        <h1>09. Comandos DDL</h1>
+        <h2>Definiendo la arquitectura (Data Definition Language).</h2>
+        <div class="content-grid">
+            <article>
+                <p>Comandos que modifican el esquema de la base de datos:</p>
+                <ul style="font-family: monospace; font-size: 0.9rem;">
+                    <li><strong>CREATE:</strong> Crea objetos (tablas, índices).</li>
+                    <li><strong>ALTER:</strong> Modifica la estructura (agrega columnas).</li>
+                    <li><strong>DROP:</strong> Elimina el objeto y sus datos permanentemente.</li>
+                    <li><strong>TRUNCATE:</strong> Vacía la tabla pero mantiene la estructura.</li>
+                    <li><strong>RENAME:</strong> Cambia el nombre de la entidad.</li>
+                </ul>
+            </article>
+            <pre style="background: #000; padding: 10px; font-size: 0.75rem;">
+    -- Ejemplo ALTER en PostgreSQL/MySQL
+    ALTER TABLE Users 
+    ADD COLUMN email VARCHAR(255);</pre>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="../transitions.js"></script>
+</body>
+</html>

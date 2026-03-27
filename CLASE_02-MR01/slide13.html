@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="../index.style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Base de Datos</title>
+</head>
+<body>
+    <section class="slide">
+        <h1>13. Funciones de Agregación</h1>
+        <h2>Cálculos estadísticos sobre el conjunto de datos.</h2>
+        <div class="content-grid">
+            <article>
+                <p>Estas funciones operan sobre un conjunto de valores y devuelven un único resultado:</p>
+                <ul>
+                    <li><strong>MIN / MAX:</strong> Halla el valor extremo.</li>
+                    <li><strong>SUM:</strong> Totaliza valores numéricos.</li>
+                    <li><strong>AVG:</strong> Calcula el promedio aritmético.</li>
+                    <li><strong>COUNT:</strong> Cuenta registros (<code>COUNT(*)</code>) o valores no nulos.</li>
+                </ul>
+            </article>
+            <pre style="background: #000; padding: 10px; font-size: 0.8rem;">
+    SELECT 
+        COUNT(id) AS total_ventas, 
+        MAX(monto) AS venta_record 
+    FROM Ventas;</pre>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="../transitions.js"></script>
+</body>
+</html>

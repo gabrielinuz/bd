@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="../index.style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Base de Datos</title>
+</head>
+<body>
+    <section class="slide">
+        <h1>16. Tipos de Datos</h1>
+        <h2>Diferencias críticas entre motores.</h2>
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.8rem;">
+            <thead>
+                <tr style="border-bottom: 2px solid var(--accent);">
+                    <th>Tipo</th>
+                    <th>SQLite</th>
+                    <th>MySQL / MariaDB</th>
+                    <th>PostgreSQL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cadenas</td>
+                    <td>TEXT</td>
+                    <td>VARCHAR / TEXT</td>
+                    <td>VARCHAR / TEXT</td>
+                </tr>
+                <tr>
+                    <td>Enteros</td>
+                    <td>INTEGER</td>
+                    <td>INT / BIGINT</td>
+                    <td>INT / BIGINT / SERIAL</td>
+                </tr>
+                <tr>
+                    <td>Booleanos</td>
+                    <td>INTEGER (0 o 1)</td>
+                    <td>TINYINT (0 o 1)</td>
+                    <td>BOOLEAN</td>
+                </tr>
+                <tr>
+                    <td>Fechas</td>
+                    <td>TEXT / REAL</td>
+                    <td>DATE / DATETIME</td>
+                    <td>DATE / TIMESTAMP</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <script src="script.js"></script>
+    <script src="../transitions.js"></script>
+</body>
+</html>

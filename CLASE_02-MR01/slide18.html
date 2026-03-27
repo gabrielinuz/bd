@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="../index.style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Base de Datos</title>
+</head>
+<body>
+    <section class="slide">
+        <h1>18. Ventajas de los Esquemas</h1>
+        <h2>Seguridad y modularización en PostgreSQL.</h2>
+        <div class="content-grid">
+            <article>
+                <p>Permite que varios usuarios usen la misma base de datos sin colisiones de nombres.</p>
+                <pre style="font-size: 0.8rem; background: #000; padding: 10px;">
+    -- Crear esquema y tabla
+    CREATE SCHEMA rrhh;
+    CREATE TABLE rrhh.empleados (...);
+    
+    -- Acceso calificado
+    SELECT * FROM rrhh.empleados;</pre>
+            </article>
+            <aside style="border: 1px dashed var(--accent); padding: 10px;">
+                <p><strong>Uso en Clase:</strong> Ideal para separar entornos de producción, auditoría y pruebas dentro del mismo motor.</p>
+            </aside>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="../transitions.js"></script>
+</body>
+</html>

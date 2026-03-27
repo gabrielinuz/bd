@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../index.style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Base de Datos</title>
+</head>
+<body>
+    <section class="slide">
+        <h1>04. Implementación de Índices</h1>
+        <div class="content-grid" style="grid-template-columns: 1fr;">
+            <p>Sintaxis estándar para los tres motores (MySQL, SQLite, PostgreSQL):</p>
+            <pre style="color: var(--accent); background: #000; padding: 15px;">
+    -- Crear índice básico
+    CREATE INDEX idx_usuarios_email ON Users(email);
+    
+    -- Crear índice único (evita duplicados)
+    CREATE UNIQUE INDEX idx_dni ON Personas(dni);</pre>
+            <p><small>Nota: En <strong>PostgreSQL</strong>, los índices se crean automáticamente para PK y UNIQUE constraints.</small></p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="../transitions.js"></script>
+</body>
+</html>

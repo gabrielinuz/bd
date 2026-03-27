@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="../index.style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Base de Datos</title>
+</head>
+<body>
+    <section class="slide">
+        <h1>12. Operadores Avanzados</h1>
+        <h2>LIKE e IN: Flexibilidad en la búsqueda.</h2>
+        <div class="content-grid">
+            <article>
+                <p><strong>LIKE:</strong> Búsqueda de patrones parciales usando comodines (<code>%</code>).</p>
+                <pre style="font-size: 0.8rem;">SELECT * FROM Users WHERE nombre LIKE 'Gab%';</pre>
+                <p><strong>IN:</strong> Verifica si un valor pertenece a una lista predefinida.</p>
+                <pre style="font-size: 0.8rem;">SELECT * FROM Users WHERE pais IN ('AR', 'UY', 'CL');</pre>
+            </article>
+        </div>
+        <aside class="academic-ref">
+            <p><strong>Rigor técnico:</strong> <code>LIKE</code> es costoso en términos de CPU si el comodín está al inicio (<code>'%abc'</code>), ya que impide el uso eficiente de índices.</p>
+        </aside>
+    </section>
+    <script src="script.js"></script>
+    <script src="../transitions.js"></script>
+</body>
+</html>

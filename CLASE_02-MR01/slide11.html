@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="../index.style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>PPI - 11. Desafío Práctico: Compilación</title>
+</head>
+<body>
+    <section class="slide">
+        <h1>11. Cláusulas de Consulta</h1>
+        <h2>Filtrado y ordenamiento eficiente.</h2>
+        <div class="content-grid">
+            <article>
+                <p>Optimizan la recuperación de datos para no sobrecargar la red (GREENSOFT):</p>
+                <pre style="font-size: 0.8rem; background: #000; padding: 10px;">
+    SELECT nombre, edad 
+    FROM Users 
+    WHERE edad > 18 
+    ORDER BY nombre ASC 
+    LIMIT 10;</pre>
+            </article>
+            <ul style="font-size: 0.9rem;">
+                <li><strong>WHERE:</strong> Filtro lógico.</li>
+                <li><strong>ORDER BY:</strong> Organización visual.</li>
+                <li><strong>LIMIT:</strong> Paginación (vital para el rendimiento).</li>
+            </ul>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="../transitions.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+##########################################################################################################
+                                        DIAPOSITIVAS 01 A 06
+
+Crítica y Sugerencias de Clase:
+Diferencia Crítica en SQLite: En el Slide 26, es vital mencionar que en SQLite, las Foreign Keys están desactivadas por defecto por razones de compatibilidad hacia atrás. Se deben activar con PRAGMA foreign_keys = ON;.
+
+Rigor Académico: Cuando hables de Índices (Slide 23), menciona que "un índice es como el índice de un libro físico"; no necesitas leer todas las páginas (Full Table Scan) para encontrar un tema.
+
+Greensoft: Resalta que un buen uso de índices reduce el tiempo de ejecución de la consulta, lo que implica menos tiempo de uso de CPU y menor consumo energético en el servidor.
+
+##########################################################################################################
+                                        DIAPOSITIVAS 07 A 12
+
+Crítica y Sugerencia para el debate en clase:
+Diferencia DROP vs TRUNCATE: Es una pregunta clásica de examen. Resalta que DROP borra hasta la definición de la tabla, mientras que TRUNCATE es como un "borrón y cuenta nueva" que reinicia contadores (como los autoincrementales en algunos motores).
+
+Rendimiento (Greensoft): En el Slide 31, menciona que usar SELECT * es una mala práctica. Se debe pedir solo las columnas necesarias para ahorrar ancho de banda y memoria.
+
+Relaciones N:M: Puedes preguntar a los alumnos: "Si Spotify no tuviera una tabla intermedia entre 'Canciones' y 'Playlists', ¿cómo creen que afectaría la base de datos?".
+
+##########################################################################################################
+                                        DIAPOSITIVAS 12 A 18
+
+Crítica y Sugerencias Finales:
+Booleanos en SQLite: Es un gran punto de debate. Explica a los alumnos que SQLite es "débilmente tipado" (Dynamic Typing), lo que lo hace eficiente pero requiere más rigor por parte del programador.
+
+JOIN vs Subquery: En el Slide 35, puedes mencionar que, por lo general, los JOIN son más eficientes energéticamente (GREENSOFT) porque el motor optimiza mejor la unión que las consultas anidadas.
+
+Namespaces: Al hablar de esquemas, usa la analogía de las carpetas en un sistema operativo: puedes tener un archivo "index.html" en diferentes carpetas sin que se pisen.

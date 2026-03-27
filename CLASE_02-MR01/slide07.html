@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../index.style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Base de Datos</title>
+</head>
+<body>
+    <section class="slide">
+        <h1>07. Cardinalidad: 1:1 y 1:N</h1>
+        <h2>Definiendo el flujo de la información.</h2>
+        <div class="content-grid">
+            <article>
+                <p><strong>1:1 (Uno a Uno):</strong> Un registro de A pertenece solo a uno de B. Útil para separar datos sensibles o extensiones de tabla.</p>
+                <pre style="font-size: 0.8rem; color: var(--accent);">
+    [ USUARIO ] 1 <------> 1 [ PERFIL_DETALLE ]
+    (id_user)              (fk_user_id)
+                </pre>
+                <p><strong>1:N (Uno a Muchos):</strong> Un registro de A puede tener muchos en B. Es la más común.</p>
+                <pre style="font-size: 0.8rem; color: var(--accent);">
+    [ CLIENTE ] 1 <------> N [ FACTURAS ]
+    (id_cli)               (fk_cliente_id)
+                </pre>
+            </article>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="../transitions.js"></script>
+</body>
+</html>

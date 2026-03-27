@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../index.style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Base de Datos</title>
+</head>
+<body>
+    <section class="slide">
+        <h1>02. Claves y Relaciones</h1>
+        <h2>Garantizando la integridad referencial.</h2>
+        <div class="content-grid">
+            <article>
+                <p><strong>Primary Key (PK):</strong> Identificador único e irrepetible para cada fila. No puede ser nulo (NOT NULL).</p>
+                <p><strong>Foreign Key (FK):</strong> Un campo que establece un vínculo con la PK de otra tabla, creando la relación lógica.</p>
+            </article>
+            <div style="font-family: monospace; font-size: 0.8rem; border: 1px solid var(--accent); padding: 10px;">
+                TABLA_USUARIOS (<u>id_user</u>, nombre) <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V<br>
+                TABLA_PEDIDOS (id_pedido, <i>id_user</i>, fecha)
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="../transitions.js"></script>
+</body>
+</html>

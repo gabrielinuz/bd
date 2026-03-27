@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="../index.style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Base de Datos</title>
+</head>
+<body>
+    <section class="slide">
+        <h1>08. Cardinalidad: N:M</h1>
+        <h2>La necesidad de una Tabla Intermedia.</h2>
+        <div class="content-grid">
+            <article>
+                <p><strong>N:M (Muchos a Muchos):</strong> Varios registros de A se relacionan con varios de B. Físicamente, esto **no es posible** de forma directa en un RDBMS; requiere una tabla de unión (Join Table).</p>
+                <pre style="font-size: 0.75rem; line-height: 1.2; color: var(--accent);">
+    [ ESTUDIANTE ]       [ INSCRIPCIÓN ]       [ MATERIA ]
+    (id_est) 1 <------> N (fk_est)             (id_mat)
+                          (fk_mat) N <------> 1 
+                </pre>
+            </article>
+            <aside class="academic-ref">
+                <p><strong>Nota técnica:</strong> La tabla intermedia permite romper la relación N:M en dos relaciones 1:N, cumpliendo con la Primera Forma Normal (1FN).</p>
+            </aside>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="../transitions.js"></script>
+</body>
+</html>
